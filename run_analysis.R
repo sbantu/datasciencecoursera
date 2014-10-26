@@ -110,4 +110,4 @@ names(data_mean_std) <- gsub("Mag", "Magnitude", names(data_mean_std))
 tidydata_average_sub<- ddply(data_mean_std, c("subject","activity"), numcolwise(mean))
 
 
-write.table(tidydata_average_sub,file="test.txt")
+write.table(tidydata_average_sub,file="tidydata.txt")
